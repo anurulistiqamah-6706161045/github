@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="org.d3ifcool.weeaboovocabulary.MainActivity">
+    <!--Pengaturan waktu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/jam"
+            android:text="@string/waktu"
+            android:textAlignment="center"
+            android:textColor="@color/colorDefault"
+            android:textSize="48sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/batas"
+            android:textAlignment="center"
+            android:textColor="@color/colorDefault"
+            android:textSize="48sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/menit"
+            android:text="@string/waktu"
+            android:textAlignment="center"
+            android:textColor="@color/colorDefault"
+            android:textSize="48sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/reset"
+            android:background="@color/colorBar"
+            android:textColor="@color/colorBtnReset"
+            android:text="@string/reset"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/save"
+            android:background="@color/colorDefault"
+            android:textColor="@color/colorBtnReset"
+            android:text="@string/save"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDefault"
+        android:layout_marginTop="16dp">
+
+    </View>
+    <!--Pengaturan waktu-->
+    <!--Menampilkan jadwal Pelafalan Setiap harinya-->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/list_jadwal"
+        android:layout_marginTop="16dp">
+
+    </ListView>
+    <!--Menampilkan jadwal Pelafalan Setiap harinya-->
+
+
+</LinearLayout>
+
